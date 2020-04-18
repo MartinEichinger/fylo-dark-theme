@@ -1,0 +1,22 @@
+.divAttr {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -250px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  color: white;
+}
+
+.divAttrSingleBody {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: white;
+  background-color: #181f2b;
+}
