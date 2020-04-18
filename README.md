@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This FyloDarkTheme landing page uses [Create React App](https://github.com/facebook/create-react-app) and SCSS.
+I applied some functional components for the view elements and one class component for the modell component.
+For the styling of the site is use .SCSS.
 
 ## Available Scripts
 
