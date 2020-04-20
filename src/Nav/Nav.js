@@ -3,9 +3,9 @@ import './Nav.scss';
 
 function renderSortByItems(props) {
 
-  return props.propsNav.items.map((item, i) => {
+  return props.propsDiv.items.map((item, i) => {
     let navClass = 'navigation-'+i;
-    return <div className={navClass} key={i}>{item}</div>;
+    return <a href={item.link} className={navClass} key={i}>{item.name}</a>;
   });
 }
 
@@ -13,7 +13,7 @@ export function Nav(props) {
   console.log(props);
   return (
     <div className="header">
-      <img src={props.propsNav.imgSrc} alt="" />
+      <img src={props.propsDiv.imgSrc} alt="" />
       <div className="navigation">
         {renderSortByItems(props)}
       </div>

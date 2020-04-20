@@ -14,7 +14,18 @@ class App extends React.Component {
 
     this.propsNav = {
       imgSrc: "./images/logo-white.svg",
-      items: ['Features', 'Team', 'Sign In']
+      items: [{
+                name: 'Features',
+                link: "#"
+              },
+              {
+                name: 'Team',
+                link: '#'
+              },
+              {
+                name: 'Sign In',
+                link: '#'
+              }]
     };
 
     this.propsDivIntro = {
@@ -119,7 +130,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav propsNav={this.propsNav} />
+        <Nav propsDiv={this.propsNav} />
         <DivPctTxtForm propsDiv={this.propsDivIntro} />
         <DivAttr propsDiv={this.propsDivAttr} propsDivSingle={this.propsDivAttrSingle}/>
         <DivPctTxtForm propsDiv={this.propsDivProd} />
