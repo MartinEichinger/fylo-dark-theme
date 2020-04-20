@@ -17,7 +17,7 @@ export function DivPctTxtForm(props) {
           {props.propsDiv.isBtnOrFormOrLnk === 'form' &&
             <input type='text' placeholder={props.propsDiv.formPlaceholder} />
           }
-          <div className={props.propsDiv.isBtnOrFormOrLnk}>
+          <div className={props.propsDiv.isBtnOrFormOrLnk} onClick={props.startEvent}>
             {props.propsDiv.btnLnkTxt}
           </div>
         </div>

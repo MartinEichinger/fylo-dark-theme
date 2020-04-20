@@ -1,5 +1,5 @@
 import React from 'react';
-import './DivAttrSingle.css';
+import './DivAttrSingle.scss';
 
 export function DivAttrSingle(props) {
   console.log('DivAttrSingle: ',props);

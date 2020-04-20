@@ -126,16 +126,23 @@ class App extends React.Component {
       btnLnkTxt: 'Get Started For Free',
       linkTxtImg: ''
     };
+
+    this.handleGetStarted = this.handleGetStarted.bind(this);
   }
+
+  handleGetStarted(event) {
+    alert('Letz get started');
+  }
+
   render() {
     return (
       <div className="App">
         <Nav propsDiv={this.propsNav} />
-        <DivPctTxtForm propsDiv={this.propsDivIntro} />
+        <DivPctTxtForm propsDiv={this.propsDivIntro} startEvent={this.handleGetStarted} />
         <DivAttr propsDiv={this.propsDivAttr} propsDivSingle={this.propsDivAttrSingle}/>
         <DivPctTxtForm propsDiv={this.propsDivProd} />
         <DivQuotes propsDiv={this.propsDivQuotes} propsDivSingle={this.propsDivQuotesSingle} />
-        <DivPctTxtForm propsDiv={this.propsDivEarlyAccess} />
+        <DivPctTxtForm propsDiv={this.propsDivEarlyAccess} startEvent={this.handleGetStarted} />
         <Footer />
       </div>
     );
