@@ -19,10 +19,17 @@
 .divQuotesSingleBody {
   font-family: 'Open Sans', sans-serif;
   width: 80%;
-  margin: -25px auto 0px;
+  margin: -15px auto 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   color: white;
   background-color: rgba(0,0,0,0);
+}
+
+@media screen and (max-width: 768px) {
+  .divQuotesSingleBody {
+    flex-flow: column wrap;
+
+  }
 }

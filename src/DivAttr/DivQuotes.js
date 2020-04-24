@@ -1,5 +1,5 @@
 import React from 'react';
-import './DivQuotes.css';
+import './DivQuotes.scss';
 import {DivAttrSingle} from '../DivAttrSingle/DivAttrSingle';
 
 export function DivQuotes(props) {

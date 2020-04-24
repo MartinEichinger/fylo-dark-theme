@@ -5,7 +5,9 @@ export function Footer(props) {
   console.log(props);
   return (
     <div className="footer">
-      <img src="./images/logo-white.svg" alt="" />
+      <div className="footerImg">
+        <img src="./images/logo-white.svg" alt="" />
+      </div>
       <div className="block">
         <div className="block11">
           <img src="./images/icon-location.svg" alt="" />
