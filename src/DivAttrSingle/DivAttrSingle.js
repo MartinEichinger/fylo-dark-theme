@@ -2,7 +2,7 @@ import React from 'react';
 import './DivAttrSingle.scss';
 
 export function DivAttrSingle(props) {
-  console.log('DivAttrSingle: ',props);
+  console.log('DivAttrSingle/DivQuotesSingle: ',props);
   return (
     <div className={props.propsDivSingle.name}>
       <img src={props.propsDivSingle.imgSrc} alt="" />

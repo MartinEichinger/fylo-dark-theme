@@ -5,11 +5,11 @@ import {DivAttrSingle} from '../DivAttrSingle/DivAttrSingle';
 export function DivAttr(props) {
   console.log('DivAttr: ',props);
   return (
-    <div className="divAttr">
+    <div className={props.propsDiv.name}>
       <div className="divAttrPic">
         <img src={props.propsDiv.imgSrc} alt="" />
       </div>
-      <div className="divAttrSingleBody">
+      <div className="divAttrSingleBody" id={props.propsDiv.nav}>
         <DivAttrSingle propsDivSingle={props.propsDivSingle[0]} />
         <DivAttrSingle propsDivSingle={props.propsDivSingle[1]} />
         <DivAttrSingle propsDivSingle={props.propsDivSingle[2]} />

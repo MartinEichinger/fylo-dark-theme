@@ -33,6 +33,7 @@
     line-height: normal;
     background-color: hsl(198, 60%, 50%);
     cursor: pointer;
+    max-height: 20px;
   }
 }
 
@@ -98,12 +99,21 @@
   }
   .link_W_Img {
     margin: 30px auto 0px;
-    text-align: left;
-    font-size: 15px;
-    font-weight: 200;
-    color: hsl(176, 68%, 64%);
-    line-height: normal;
-    text-decoration: underline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 200;
+      color: hsl(176, 68%, 64%);
+      line-height: normal;
+    }
+    img {
+      width: 15px;
+      margin-left: 15px;
+    }
   }
 }
 
@@ -180,14 +190,17 @@
     }
     .form {
       //margin: 30px auto 0px;
-      padding: 10px;
       width: 150px;
+      padding: 10px;
       border-radius: 20px;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: normal;
       background-color: hsl(198, 60%, 50%);
+      max-height: 20px;
       cursor: pointer;
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
   }
 }
@@ -205,6 +218,25 @@
       }
       .blockForm {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .divEarlyAccess {
+    .block {
+      width: 65%;
+      padding: 7.5%;
+      .blockForm {
+        input {
+          width: 80%;
+          margin-bottom: 10px;
+          padding: 3% 4%;
+        }
+        .form {
+          width: 82%;
+        }
       }
     }
   }

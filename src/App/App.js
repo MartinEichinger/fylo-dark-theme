@@ -16,15 +16,15 @@ class App extends React.Component {
       imgSrc: "./images/logo-white.svg",
       items: [{
                 name: 'Features',
-                link: "#"
+                link: "#features"
               },
               {
                 name: 'Team',
-                link: '#'
+                link: '#team'
               },
               {
                 name: 'Sign In',
-                link: '#'
+                link: '#signIn'
               }]
     };
 
@@ -38,12 +38,13 @@ class App extends React.Component {
       linkTxtImg: ''
     };
 
-    this.propsDivAttr = {
+    this.propsDivFeatures = {
       name: "divAttr",
-      imgSrc: './images/bg-curvy-desktop.svg'
+      imgSrc: './images/bg-curvy-desktop.svg',
+      nav: "features"
     };
 
-    this.propsDivAttrSingle = [
+    this.propsDivFeaturesSingle = [
       {
         name: 'divAttrSingle',
         imgSrc: './images/icon-access-anywhere.svg',
@@ -77,13 +78,14 @@ class App extends React.Component {
       h1Txt: 'Stay productive, wherever you are.',
       pTxt: 'Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. Securely share files and folders with friends, family and colleagues for live collaboration. No email attachements required.',
       btnLnkTxt: 'See how Fylo works',
-      linkTxtImg: ''
+      linkTxtImg: './images/icon-arrow.svg'
     };
 
     this.propsDivQuotes = {
       name: 'divQuotes',
       name2: 'divQuotesSingleBody',
-      imgSrc: './images/bg-quotes.png'
+      imgSrc: './images/bg-quotes.png',
+      nav: "team"
     };
 
     this.propsDivQuotesSingle = [
@@ -118,6 +120,7 @@ class App extends React.Component {
 
     this.propsDivEarlyAccess = {
       name: 'divEarlyAccess',
+      nav: 'signIn',
       isBtnOrFormOrLnk: 'form',
       imgSrc: '',
       h1Txt: 'Get early access today',
@@ -139,8 +142,8 @@ class App extends React.Component {
       <div className="App">
         <Nav propsDiv={this.propsNav} />
         <DivPctTxtForm propsDiv={this.propsDivIntro} startEvent={this.handleGetStarted} />
-        <DivAttr propsDiv={this.propsDivAttr} propsDivSingle={this.propsDivAttrSingle}/>
-        <DivPctTxtForm propsDiv={this.propsDivProd} />
+        <DivAttr propsDiv={this.propsDivFeatures} propsDivSingle={this.propsDivFeaturesSingle}/>
+        <DivPctTxtForm propsDiv={this.propsDivProd} startEvent={this.handleGetStarted} />
         <DivQuotes propsDiv={this.propsDivQuotes} propsDivSingle={this.propsDivQuotesSingle} />
         <DivPctTxtForm propsDiv={this.propsDivEarlyAccess} startEvent={this.handleGetStarted} />
         <Footer />
